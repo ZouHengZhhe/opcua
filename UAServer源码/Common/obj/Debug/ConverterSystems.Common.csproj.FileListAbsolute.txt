@@ -1,0 +1,24 @@
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Common\bin\Debug\ConverterSystems.Common.dll
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Common\bin\Debug\ConverterSystems.Common.pdb
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Common\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Common\obj\Debug\ConverterSystems.Common.csprojResolveAssemblyReference.cache
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Common\obj\Debug\Themes\Generic.baml
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Common\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Common\obj\Debug\ConverterSystems.Common_MarkupCompile.cache
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Common\obj\Debug\ConverterSystems.Common_MarkupCompile.lref
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Common\obj\Debug\Themes\Generic\Trendline.baml
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Common\obj\Debug\ConverterSystems.Common.g.resources
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Common\obj\Debug\ConverterSystems.Common.dll
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Common\obj\Debug\ConverterSystems.Common.pdb
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Common\bin\Debug\ConverterSystems.Common.dll
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Common\bin\Debug\ConverterSystems.Common.pdb
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Common\bin\Debug\System.Windows.Interactivity.dll
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Common\obj\Debug\ConverterSystems.Common.csprojResolveAssemblyReference.cache
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Common\obj\Debug\Themes\Generic.baml
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Common\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Common\obj\Debug\ConverterSystems.Common_MarkupCompile.cache
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Common\obj\Debug\ConverterSystems.Common_MarkupCompile.lref
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Common\obj\Debug\Themes\Generic\Trendline.baml
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Common\obj\Debug\ConverterSystems.Common.g.resources
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Common\obj\Debug\ConverterSystems.Common.dll
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Common\obj\Debug\ConverterSystems.Common.pdb

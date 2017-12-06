@@ -1,0 +1,9 @@
+﻿<UserControl x:Class="ConverterSystems.Ua.Design.UaSubscriptionEditorButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <StackPanel>
+        <TextBlock Margin="16,0">
+            <Hyperlink Click="BrowseClick">Browse OPC UA Server...</Hyperlink>
+        </TextBlock>
+    </StackPanel>
+</UserControl>

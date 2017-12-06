@@ -1,0 +1,74 @@
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\bin\Debug\ConverterSystems.Workstation.exe.config
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\bin\Debug\OPC License Agreement.rtf
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\bin\Debug\REDIST.TXT
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\bin\Debug\ConverterSystems.Workstation.exe
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\bin\Debug\ConverterSystems.Workstation.pdb
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\bin\Debug\ConverterSystems.Common.dll
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\bin\Debug\ConverterSystems.Ua.dll
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\bin\Debug\MahApps.Metro.dll
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\bin\Debug\Opc.Ua.Client.dll
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\bin\Debug\Opc.Ua.Core.dll
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\bin\Debug\ConverterSystems.Common.pdb
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\bin\Debug\ConverterSystems.Ua.pdb
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\ConverterSystems.Workstation.csprojResolveAssemblyReference.cache
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\Views\AboutWorkstation.baml
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\Views\Resources\Robot3dResources.baml
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\Views\ControlPanelView.baml
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\Views\RobotView.baml
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\App.baml
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\Views\AboutWorkstation.g.cs
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\Views\SignInView.g.cs
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\Views\SettingsView.g.cs
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\Views\ControlPanelView.g.cs
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\Views\RobotView.g.cs
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\App.g.cs
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\ConverterSystems.Workstation_MarkupCompile.cache
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\ConverterSystems.Workstation_MarkupCompile.lref
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\Views\SignInView.baml
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\Views\SettingsView.baml
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\Views\MainWindow.baml
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\ConverterSystems.Workstation.g.resources
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\ConverterSystems.Workstation.Properties.Resources.resources
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\ConverterSystems.Workstation.csproj.GenerateResource.Cache
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\ConverterSystems.Workstation.exe
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Workstation\obj\Debug\ConverterSystems.Workstation.pdb
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\bin\Debug\ConverterSystems.Workstation.exe.config
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\ConverterSystems.Workstation.exe
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\ConverterSystems.Workstation.pdb
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\bin\Debug\OPC License Agreement.rtf
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\bin\Debug\REDIST.TXT
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\bin\Debug\ConverterSystems.Workstation.exe
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\bin\Debug\ConverterSystems.Workstation.pdb
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\bin\Debug\ConverterSystems.Common.dll
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\bin\Debug\ConverterSystems.Ua.dll
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\bin\Debug\MahApps.Metro.dll
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\bin\Debug\Opc.Ua.Client.dll
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\bin\Debug\Opc.Ua.Core.dll
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\bin\Debug\System.Windows.Interactivity.dll
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\bin\Debug\ConverterSystems.Common.pdb
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\bin\Debug\ConverterSystems.Ua.pdb
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\ConverterSystems.Workstation.csprojResolveAssemblyReference.cache
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\Views\AboutWorkstation.baml
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\Views\Resources\Robot3dResources.baml
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\Views\ControlPanelView.baml
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\Views\RobotView.baml
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\App.baml
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\Views\AboutWorkstation.g.cs
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\Views\SignInView.g.cs
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\Views\SettingsView.g.cs
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\Views\ControlPanelView.g.cs
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\Views\RobotView.g.cs
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\Views\MainWindow.g.cs
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\App.g.cs
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\ConverterSystems.Workstation_MarkupCompile.cache
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\ConverterSystems.Workstation_MarkupCompile.lref
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\Views\SignInView.baml
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\Views\SettingsView.baml
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\Views\MainWindow.baml
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\ConverterSystems.Workstation.g.resources
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\ConverterSystems.Workstation.Properties.Resources.resources
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\ConverterSystems.Workstation.csproj.GenerateResource.Cache

@@ -1,0 +1,419 @@
+﻿<Window x:Class="ConverterSystems.Ua.Design.UaSubscriptionEditorDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConverterSystems.Ua.Design"
+        mc:Ignorable="d"
+        Title="{Binding Session.EndpointUrl, StringFormat=Browse OPC UA Server - \{0\}}"
+        Height="600" Width="1024"
+        d:DataContext="{d:DesignInstance Type={x:Type local:UaSubscriptionViewModel}}"
+        WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Controls.xaml" />
+                <ResourceDictionary Source="Resources/Fonts.xaml" />
+                <ResourceDictionary Source="Resources/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Blue.xaml" />
+                <ResourceDictionary Source="Resources/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter1" />
+            <local:IntToStringConverter x:Key="IntToStringConverter" DefaultInteger="120" />
+            <Style TargetType="Button">
+                <Setter Property="Background" Value="Transparent" />
+                <Setter Property="Foreground" Value="{DynamicResource BlackBrush}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource BlackBrush}" />
+                <Setter Property="BorderThickness" Value="2" />
+                <Setter Property="Padding" Value="12,4,12,4" />
+                <Setter Property="HorizontalAlignment" Value="Left" />
+                <Setter Property="VerticalAlignment" Value="Center" />
+                <Setter Property="FontFamily" Value="Segoe UI Semibold" />
+                <Setter Property="FontSize" Value="14.667" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Grid>
+                                <Border x:Name="Border"
+                                        Background="{TemplateBinding Background}"
+                                        BorderBrush="{TemplateBinding BorderBrush}"
+                                        BorderThickness="{TemplateBinding BorderThickness}"
+                                        Margin="3">
+                                    <ContentPresenter x:Name="ContentPresenter"
+                                                      Content="{TemplateBinding Content}"
+                                                      ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                      Margin="{TemplateBinding Padding}"
+                                                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                                </Border>
+                                <Rectangle x:Name="FocusVisual"
+                                           IsHitTestVisible="False"
+                                           Stroke="{TemplateBinding Foreground}"
+                                           StrokeEndLineCap="Square"
+                                           StrokeDashArray="1,1"
+                                           Opacity="0"
+                                           StrokeDashOffset="0.5" />
+                            </Grid>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsDefault" Value="True">
+                                    <Setter Property="Foreground"
+                                            Value="{DynamicResource AccentSelectedColorBrush}" />
+                                    <Setter Property="BorderBrush"
+                                            Value="{DynamicResource AccentSelectedColorBrush}" />
+                                    <Setter Property="Background"
+                                            Value="{DynamicResource AccentColorBrush}" />
+                                </Trigger>
+                                <Trigger Property="IsMouseOver"
+                                         Value="True">
+                                    <Setter Property="Background"
+                                            Value="{DynamicResource GrayNormalBrush}" />
+                                </Trigger>
+                                <Trigger Property="IsPressed"
+                                         Value="True">
+                                    <Setter Property="Background"
+                                            Value="{DynamicResource BlackBrush}" />
+                                    <Setter Property="Foreground"
+                                            Value="{DynamicResource WhiteBrush}" />
+                                </Trigger>
+                                <Trigger Property="IsKeyboardFocused"
+                                         Value="True">
+                                    <Setter TargetName="FocusVisual" Property="Opacity"
+                                            Value="1" />
+                                </Trigger>
+                                <Trigger Property="IsEnabled"
+                                         Value="False">
+                                    <Setter Property="BorderBrush"
+                                            Value="{DynamicResource GrayBrush2}" />
+                                    <Setter Property="Foreground"
+                                            Value="{DynamicResource GrayBrush2}" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="ChromelessButtonStyle"
+                   TargetType="{x:Type Button}">
+                <Setter Property="Background"
+                        Value="Transparent" />
+                <Setter Property="Foreground"
+                        Value="{DynamicResource SemiTransparentWhiteBrush}" />
+                <Setter Property="HorizontalContentAlignment"
+                        Value="Center" />
+                <Setter Property="VerticalContentAlignment"
+                        Value="Center" />
+                <Setter Property="Padding"
+                        Value="1" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Grid x:Name="grid" Background="{TemplateBinding Background}">
+                                <ContentPresenter x:Name="contentPresenter"
+                                                  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                  Margin="{TemplateBinding Padding}"
+                                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                                  RecognizesAccessKey="True" />
+                            </Grid>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver"
+                                         Value="True">
+                                    <Setter Property="Foreground"
+                                            Value="{DynamicResource WhiteBrush}" />
+                                </Trigger>
+                                <Trigger Property="IsEnabled"
+                                         Value="False">
+                                    <Setter Property="Foreground"
+                                            Value="Transparent" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+        </ResourceDictionary>
+
+    </Window.Resources>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="256" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <GroupBox Header="SERVER NAMESPACE">
+                <TreeView x:Name="NamespaceTree"
+                          ItemsSource="{Binding NamespaceItems}"
+                          PreviewMouseLeftButtonDown="OnTreeMouseLeftButtonDown"
+                          MouseMove="OnTreeMouseMove">
+                    <TreeView.CommandBindings>
+                        <CommandBinding Command="Select"
+                                        CanExecute="AddCanExecute"
+                                        Executed="AddExecuted" />
+                    </TreeView.CommandBindings>
+                    <TreeView.ItemContainerStyle>
+                        <Style TargetType="{x:Type TreeViewItem}">
+                            <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
+                            <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
+                        </Style>
+                    </TreeView.ItemContainerStyle>
+                    <TreeView.ItemTemplate>
+                        <HierarchicalDataTemplate DataType="{x:Type local:ReferenceDescriptionViewModel}"
+                                                  ItemsSource="{Binding Children}">
+                            <Grid x:Name="panel" Height="28">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock x:Name="icon" Margin="3,0"
+                                           FontFamily="/ConverterSystems.Ua.Design;component/Resources/#FontAwesome"
+                                           FontSize="16" Foreground="Black" VerticalAlignment="Center" Text="&#xf07c;" />
+                                <TextBlock Grid.Column="1" Text="{Binding DisplayName}" Margin="3,0"
+                                           VerticalAlignment="Center" />
+                                <Button Grid.Column="2" Command="Select" Content="&#xf055;" Margin="3,0"
+                                        VerticalAlignment="Center"
+                                        ToolTip="Add this item to list."
+                                        Style="{StaticResource ChromelessButtonStyle}"
+                                        FontSize="18" Width="28" Height="24"
+                                        FontFamily="/ConverterSystems.Ua.Design;component/Resources/#FontAwesome"
+                                        Visibility="{Binding CanAdd, Converter={StaticResource BooleanToVisibilityConverter1}}" />
+                                <ProgressBar Grid.Column="2" IsIndeterminate="True" Width="60"
+                                             VerticalAlignment="Center"
+                                             Visibility="{Binding IsLoading, Converter={StaticResource BooleanToVisibilityConverter1}}" />
+                            </Grid>
+                            <HierarchicalDataTemplate.Triggers>
+                                <DataTrigger Binding="{Binding IsVariable}" Value="True">
+                                    <Setter TargetName="icon" Property="Text" Value="&#xf0e4;" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding IsMethod}" Value="True">
+                                    <Setter TargetName="icon" Property="Text" Value="&#xf0ec;" />
+                                </DataTrigger>
+                            </HierarchicalDataTemplate.Triggers>
+                        </HierarchicalDataTemplate>
+                    </TreeView.ItemTemplate>
+                </TreeView>
+            </GroupBox>
+
+            <GridSplitter Grid.Column="1" Width="5" ResizeBehavior="PreviousAndNext" ResizeDirection="Columns" />
+
+            <TabControl x:Name="SubscriptionTabControl" Grid.Column="2">
+
+                <TabItem Header="PROPERTIES">
+                    <DockPanel>
+                        <GroupBox DockPanel.Dock="Bottom" Margin="0">
+                            <TextBlock TextWrapping="Wrap"
+                                       Text="These items will be available for binding as properties of the subscription. Setting the property will write the value to the node of the server. In code, the property can be read and written if the subscription is first cast to type 'dynamic'." />
+                        </GroupBox>
+                        <DataGrid x:Name="PropertiesGrid" ItemsSource="{Binding Properties}"
+                                  Style="{DynamicResource AzureDataGrid}"
+                                  AutoGenerateColumns="False" Drop="OnPropertiesGridDrop" AllowDrop="True"
+                                  CanUserAddRows="False" CanUserResizeRows="False" CanUserDeleteRows="True"
+                                  IsSynchronizedWithCurrentItem="True" >
+                            <DataGrid.Columns>
+                                <DataGridTextColumn
+                                    Header="Name" Width="200">
+                                    <DataGridTextColumn.Binding>
+                                        <Binding Path="Properties[DisplayName].ComputedValue">
+                                            <Binding.ValidationRules>
+                                                <local:NameValidationRule />
+                                            </Binding.ValidationRules>
+                                        </Binding>
+                                    </DataGridTextColumn.Binding>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn
+                                    Binding="{Binding Properties[StartNodeId].ComputedValue}"
+                                    Header="Node Id" Width="180" IsReadOnly="True" />
+                                <DataGridTextColumn
+                                    Binding="{Binding Properties[RelativePath].ComputedValue}"
+                                    Header="Path" Width="180" IsReadOnly="True" />
+                                <DataGridTextColumn Binding="{Binding Properties[Type].ComputedValue}"
+                                                    Header="Data Type" Width="120" IsReadOnly="True" />
+                                <DataGridTemplateColumn>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Content="&#xf056;" Command="ApplicationCommands.Delete"
+                                                    ToolTip="Remove this item."
+                                                    Style="{StaticResource ChromelessButtonStyle}"
+                                                    FontSize="14" Width="28"
+                                                    FontFamily="/ConverterSystems.Ua.Design;component/Resources/#FontAwesome"
+                                                    Visibility="{Binding IsSelected, Converter={StaticResource BooleanToVisibilityConverter1},
+                                    RelativeSource={RelativeSource FindAncestor, AncestorType=DataGridRow}}">
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </DockPanel>
+                </TabItem>
+                <TabItem Header="COMMANDS">
+                    <DockPanel>
+                        <GroupBox DockPanel.Dock="Bottom" Margin="0">
+                            <TextBlock TextWrapping="Wrap">
+                                <Run
+                                    Text="These items will be available for binding as properties of type 'ICommand'. Executing the command will write the value of the 'CommandParameter' to the node of the server. In code, the command can be executed if the subscription is first cast to type 'dynamic'." />
+                            </TextBlock>
+                        </GroupBox>
+                        <DataGrid x:Name="CommandsGrid" ItemsSource="{Binding Commands}"
+                                  Style="{DynamicResource AzureDataGrid}"
+                                  AutoGenerateColumns="False" Drop="OnCommandsGridDrop" AllowDrop="True"
+                                  CanUserAddRows="False" CanUserResizeRows="False" CanUserDeleteRows="True"
+                                  IsSynchronizedWithCurrentItem="True">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn
+                                    Header="Name" Width="200">
+                                    <DataGridTextColumn.Binding>
+                                        <Binding Path="Properties[DisplayName].ComputedValue">
+                                            <Binding.ValidationRules>
+                                                <local:NameValidationRule />
+                                            </Binding.ValidationRules>
+                                        </Binding>
+                                    </DataGridTextColumn.Binding>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn
+                                    Binding="{Binding Properties[StartNodeId].ComputedValue}"
+                                    Header="Node Id" Width="180" IsReadOnly="True" />
+                                <DataGridTextColumn
+                                    Binding="{Binding Properties[RelativePath].ComputedValue}"
+                                    Header="Path" Width="180" IsReadOnly="True" />
+                                <DataGridTextColumn Binding="{Binding Properties[Type].ComputedValue}"
+                                                    Header="Data Type" Width="120" IsReadOnly="True" />
+                                <DataGridTemplateColumn>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Content="&#xf056;" Command="ApplicationCommands.Delete"
+                                                    ToolTip="Remove this item."
+                                                    Style="{StaticResource ChromelessButtonStyle}"
+                                                    FontSize="14" Width="28"
+                                                    FontFamily="/ConverterSystems.Ua.Design;component/Resources/#FontAwesome"
+                                                    Visibility="{Binding IsSelected, Converter={StaticResource BooleanToVisibilityConverter1},
+                                    RelativeSource={RelativeSource FindAncestor, AncestorType=DataGridRow}}">
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </DockPanel>
+                </TabItem>
+                <TabItem Header="DATASOURCES">
+                    <DockPanel>
+                        <GroupBox DockPanel.Dock="Bottom" Margin="0">
+                            <TextBlock TextWrapping="Wrap"
+                                       Text="These items will be available for binding as properties of type IEnumerable&lt;Opc.Ua.DataValue&gt;. To display a trend, bind the ItemsSource property of a charting tool to one of the DataSources. Set the YValuePath to 'Value' and XValuePath to 'SourceTimestamp'. This property will be updated at the subscription's PublishingInterval." />
+                        </GroupBox>
+                        <DataGrid x:Name="DataSourcesGrid" ItemsSource="{Binding DataSources}"
+                                  Style="{DynamicResource AzureDataGrid}"
+                                  AutoGenerateColumns="False" Drop="OnDataSourcesGridDrop" AllowDrop="True"
+                                  CanUserAddRows="False" CanUserResizeRows="False" CanUserDeleteRows="True"
+                                  IsSynchronizedWithCurrentItem="True">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn
+                                    Header="Name" Width="200">
+                                    <DataGridTextColumn.Binding>
+                                        <Binding Path="Properties[DisplayName].ComputedValue">
+                                            <Binding.ValidationRules>
+                                                <local:NameValidationRule />
+                                            </Binding.ValidationRules>
+                                        </Binding>
+                                    </DataGridTextColumn.Binding>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn
+                                    Binding="{Binding Properties[StartNodeId].ComputedValue}"
+                                    Header="Node Id" Width="120" IsReadOnly="True" />
+                                <DataGridTextColumn
+                                    Binding="{Binding Properties[RelativePath].ComputedValue}"
+                                    Header="Path" Width="120" IsReadOnly="True" />
+                                <DataGridTextColumn Binding="{Binding Properties[Type].ComputedValue}"
+                                                    Header="Data Type" Width="120" IsReadOnly="True" />
+                                <DataGridTextColumn
+                                    Header="Queue Size" Width="120">
+                                    <DataGridTextColumn.Binding>
+                                        <Binding Path="Properties[CacheQueueSize].ComputedValue"
+                                                 Converter="{StaticResource IntToStringConverter}" />
+                                    </DataGridTextColumn.Binding>
+                                </DataGridTextColumn>
+                                <DataGridTemplateColumn>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Content="&#xf056;" Command="ApplicationCommands.Delete"
+                                                    ToolTip="Remove this item."
+                                                    Style="{StaticResource ChromelessButtonStyle}"
+                                                    FontSize="14" Width="28"
+                                                    FontFamily="/ConverterSystems.Ua.Design;component/Resources/#FontAwesome"
+                                                    Visibility="{Binding IsSelected, Converter={StaticResource BooleanToVisibilityConverter1},
+                                    RelativeSource={RelativeSource FindAncestor, AncestorType=DataGridRow}}">
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </DockPanel>
+                </TabItem>
+                <TabItem Header="METHODS">
+                    <DockPanel>
+                        <GroupBox DockPanel.Dock="Bottom" Margin="0">
+                            <TextBlock TextWrapping="Wrap">
+                                <Run
+                                    Text="These items will be available as methods of the subscription. For example: &#x0A;private async void Button1_OnClick(object sender, RoutedEventArgs e)&#x0A;{&#x0A;     var dyn = (dynamic)DataContext;&#x0A;     object[] outargs = await dyn.methodname(new object[]{ input0, ... });&#x0A;}" />
+                            </TextBlock>
+                        </GroupBox>
+                        <DataGrid x:Name="MethodsGrid" ItemsSource="{Binding Methods}"
+                                  Style="{DynamicResource AzureDataGrid}"
+                                  AutoGenerateColumns="False" Drop="OnMethodsGridDrop" AllowDrop="True"
+                                  CanUserAddRows="False" CanUserResizeRows="False" CanUserDeleteRows="True"
+                                  IsSynchronizedWithCurrentItem="True">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn
+                                    Header="Name" Width="200">
+                                    <DataGridTextColumn.Binding>
+                                        <Binding Path="Properties[DisplayName].ComputedValue">
+                                            <Binding.ValidationRules>
+                                                <local:NameValidationRule />
+                                            </Binding.ValidationRules>
+                                        </Binding>
+                                    </DataGridTextColumn.Binding>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn
+                                    Binding="{Binding Properties[StartNodeId].ComputedValue}"
+                                    Header="Node Id" Width="180" IsReadOnly="True" />
+                                <DataGridTextColumn
+                                    Binding="{Binding Properties[RelativePath].ComputedValue}"
+                                    Header="Path" Width="180" IsReadOnly="True" />
+                                <DataGridTextColumn Binding="{Binding Properties[Type].ComputedValue}"
+                                                    Header="Data Type" Width="120" IsReadOnly="True" />
+                                <DataGridTemplateColumn>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Content="&#xf056;" Command="ApplicationCommands.Delete"
+                                                    ToolTip="Remove this item."
+                                                    Style="{StaticResource ChromelessButtonStyle}"
+                                                    FontSize="14" Width="28"
+                                                    FontFamily="/ConverterSystems.Ua.Design;component/Resources/#FontAwesome"
+                                                    Visibility="{Binding IsSelected, Converter={StaticResource BooleanToVisibilityConverter1},
+                                    RelativeSource={RelativeSource FindAncestor, AncestorType=DataGridRow}}">
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </DockPanel>
+                </TabItem>
+            </TabControl>
+
+        </Grid>
+        <StackPanel Grid.Row="2" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button Content="OK" Width="85" Margin="5,5,0,0" IsDefault="True" Click="ButtonOkClick" />
+            <Button Content="Cancel" Width="85" Margin="5,5,0,0" IsCancel="True" Click="ButtonCancelClick" />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,75 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:vm="clr-namespace:ConverterSystems.Workstation.ViewModels"
+    xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
+    xmlns:data="clr-namespace:ConverterSystems.Workstation.Data"
+    xmlns:metro2="clr-namespace:MahApps.Metro;assembly=MahApps.Metro"
+    x:Class="ConverterSystems.Workstation.Views.SettingsView"
+    mc:Ignorable="d"
+    Width="346" d:DesignHeight="600"
+    Background="{DynamicResource HighlightBrush}" FontSize="14.667">
+
+    <UserControl.Resources>
+        <data:ThemeToBrushConverter x:Key="ThemeToBrushConverter" />
+        <data:ThemeToStringConverter x:Key="ThemeToStringConverter" />
+        <data:AccentToBrushConverter x:Key="AccentToBrushConverter" />
+        <Style x:Key="SettingsTextBlockStyle" TargetType="TextBlock" BasedOn="{StaticResource SubheaderTextStyle}">
+            <Setter Property="Foreground" Value="{DynamicResource IdealForegroundColorBrush}" />
+        </Style>
+        <Style x:Key="SettingsTextButtonStyle" TargetType="Button" BasedOn="{StaticResource TextButtonStyle}">
+            <Setter Property="Foreground" Value="{DynamicResource IdealForegroundColorBrush}" />
+        </Style>
+    </UserControl.Resources>
+    <UserControl.DataContext>
+        <vm:SettingsViewModel />
+    </UserControl.DataContext>
+
+    <ScrollViewer>
+        <StackPanel Margin="25">
+            <Button Margin="0,10,0,10" Style="{StaticResource SettingsTextButtonStyle}" Content="Sign In"
+                    Click="ShowSignIn" />
+            <TextBlock Margin="0,10,0,10" Style="{StaticResource SettingsTextBlockStyle}" Text="Theme" />
+            <ListView Margin="5" Height="120" ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                      ItemsSource="{x:Static vm:SettingsViewModel.Themes}"
+                      SelectedItem="{Binding SelectedTheme}" Background="Transparent" BorderThickness="0">
+                <ListView.Resources>
+                    <DataTemplate DataType="{x:Type metro2:Theme}">
+                        <Rectangle Height="28" Width="28" Margin="3"
+                                   Stroke="Black"
+                                   Fill="{Binding Converter={StaticResource ThemeToBrushConverter}, Mode=OneWay}"
+                                   ToolTip="{Binding Converter={StaticResource ThemeToStringConverter}, Mode=OneWay}" />
+                    </DataTemplate>
+                </ListView.Resources>
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Vertical" />
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+            </ListView>
+            <TextBlock Margin="0,10,0,10" Style="{StaticResource SettingsTextBlockStyle}" Text="Accent" />
+            <ListView Margin="5" Height="120" ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                      ItemsSource="{x:Static vm:SettingsViewModel.AccentColors}"
+                      SelectedItem="{Binding SelectedAccent}" BorderThickness="0" Background="Transparent">
+                <ListView.Resources>
+                    <DataTemplate DataType="{x:Type metro2:Accent}">
+                        <Rectangle Height="28" Width="28" Margin="3"
+                                   Stroke="Black"
+                                   Fill="{Binding Converter={StaticResource AccentToBrushConverter}, Mode=OneWay}"
+                                   ToolTip="{Binding Name, Mode=OneWay}" />
+                    </DataTemplate>
+                </ListView.Resources>
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Vertical" />
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+            </ListView>
+            <Button Margin="0,10,0,10" Style="{StaticResource SettingsTextButtonStyle}" Content="About"
+                    Click="ShowAboutBox" />
+
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

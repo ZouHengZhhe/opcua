@@ -1,0 +1,40 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:c="clr-namespace:ConverterSystems.Workstation.Controls">
+
+    <SolidColorBrush x:Key="AxisStroke" Color="#FF564A44" />
+    <SolidColorBrush x:Key="TrendlineStroke" Color="#FFA18B7E" />
+    <SolidColorBrush x:Key="NegativeTrendlineStroke" Color="#FFA18B7E" />
+    <LinearGradientBrush x:Key="PositiveAreaBackground" EndPoint="0.5,0" StartPoint="0.5,1">
+        <GradientStop Color="#99D5AF8C" Offset="0" />
+        <GradientStop Color="#99B9A497" Offset="1" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="NegativeAreaBackground" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#99D5AF8C" Offset="0" />
+        <GradientStop Color="#99B9A497" Offset="1" />
+    </LinearGradientBrush>
+
+    <Style x:Key="{x:Type c:Trendline}" TargetType="{x:Type c:Trendline}">
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="Stroke" Value="{StaticResource TrendlineStroke}" />
+        <Setter Property="StrokeThickness" Value="2.0" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type c:Trendline}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            SnapsToDevicePixels="true">
+                        <Grid x:Name="PART_ChartArea" ClipToBounds="True">
+                            <Path
+                                Data="{TemplateBinding Geometry}"
+                                Stroke="{TemplateBinding Stroke}"
+                                StrokeThickness="{TemplateBinding StrokeThickness}" />
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

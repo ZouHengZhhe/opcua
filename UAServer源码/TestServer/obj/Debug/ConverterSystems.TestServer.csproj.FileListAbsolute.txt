@@ -1,0 +1,18 @@
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\TestServer\bin\Debug\TestServer.exe.config
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\TestServer\bin\Debug\TestServer.exe
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\TestServer\bin\Debug\TestServer.pdb
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\TestServer\bin\Debug\Opc.Ua.ComInterop.dll
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\TestServer\bin\Debug\Opc.Ua.Core.dll
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\TestServer\bin\Debug\Opc.Ua.Server.dll
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\TestServer\obj\Debug\ConverterSystems.TestServer.csprojResolveAssemblyReference.cache
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\TestServer\obj\Debug\TestServer.exe
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\TestServer\obj\Debug\TestServer.pdb
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\TestServer\bin\Debug\TestServer.exe.config
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\TestServer\bin\Debug\TestServer.exe
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\TestServer\bin\Debug\TestServer.pdb
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\TestServer\bin\Debug\Opc.Ua.ComInterop.dll
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\TestServer\bin\Debug\Opc.Ua.Core.dll
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\TestServer\bin\Debug\Opc.Ua.Server.dll
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\TestServer\obj\Debug\ConverterSystems.TestServer.csprojResolveAssemblyReference.cache
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\TestServer\obj\Debug\TestServer.exe
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\TestServer\obj\Debug\TestServer.pdb

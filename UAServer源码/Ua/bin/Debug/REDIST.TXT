@@ -1,0 +1,21 @@
+The following files are classified as redistributeable binaries under the terms of the OPC Redistributables License 1.00 (http://opcfoundation.org/License/Redistributables/1.00/):
+
+Opc.Ua.Client.dll
+Opc.Ua.ClientControls.dll
+Opc.Ua.ComInterop.dll
+Opc.Ua.Configuration.dll
+Opc.Ua.Core.dll
+Opc.Ua.Server.dll
+Opc.Ua.ComProxyServer.exe
+Opc.Ua.ComServerWrapper.exe
+Opc.Ua.DiscoveryServer.exe
+Opc.Ua.ConfigurationTool.exe
+UA Certificate Generator.exe
+Interop.NetFwTypeLib.dll
+uastack.dll
+
+The following files are redistributeable binaries which are covered under the OpenSSL license agreement (http://www.openssl.org/source/license.html):
+
+libeay32.dll
+ssleay32.dll
+

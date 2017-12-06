@@ -1,0 +1,18 @@
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Ua\bin\Debug\OPC License Agreement.rtf
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Ua\bin\Debug\REDIST.TXT
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Ua\bin\Debug\ConverterSystems.Ua.dll
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Ua\bin\Debug\ConverterSystems.Ua.pdb
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Ua\bin\Debug\Opc.Ua.Client.dll
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Ua\bin\Debug\Opc.Ua.Core.dll
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Ua\obj\Debug\ConverterSystems.Ua.csprojResolveAssemblyReference.cache
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Ua\obj\Debug\ConverterSystems.Ua.dll
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\opcuaservices455\Ua\obj\Debug\ConverterSystems.Ua.pdb
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Ua\bin\Debug\OPC License Agreement.rtf
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Ua\bin\Debug\REDIST.TXT
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Ua\bin\Debug\ConverterSystems.Ua.dll
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Ua\bin\Debug\ConverterSystems.Ua.pdb
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Ua\bin\Debug\Opc.Ua.Client.dll
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Ua\bin\Debug\Opc.Ua.Core.dll
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Ua\obj\Debug\ConverterSystems.Ua.csprojResolveAssemblyReference.cache
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Ua\obj\Debug\ConverterSystems.Ua.dll
+C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Ua\obj\Debug\ConverterSystems.Ua.pdb
