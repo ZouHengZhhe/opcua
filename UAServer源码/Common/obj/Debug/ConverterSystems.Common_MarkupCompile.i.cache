@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Common\obj\Debug\
+C:\Users\MJ\MyGit\opcua\UAServer源码\Common\obj\Debug\
 ConverterSystems.Workstation
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 2-1952998851
 
 28-1553529878
-10-1057415206
+10-2107407573
 Themes\Generic.xaml;Themes\Generic\Trendline.xaml;
 
 False

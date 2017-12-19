@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\obj\Debug\
+C:\Users\MJ\MyGit\opcua\UAServer源码\Workstation\obj\Debug\
 ConverterSystems.Workstation
 none
 false
 DEBUG;TRACE
-C:\_MyProject\CPS验证平台\OPCUA\UAServer源码\Workstation\App.xaml
+C:\Users\MJ\MyGit\opcua\UAServer源码\Workstation\App.xaml
 7-1869301764
 
 19265028183
-20-1368385140
+20830888148
 Views\AboutWorkstation.xaml;Views\SignInView.xaml;Views\SettingsView.xaml;Views\Resources\Robot3dResources.xaml;Views\ControlPanelView.xaml;Views\RobotView.xaml;Views\MainWindow.xaml;
 
 False
